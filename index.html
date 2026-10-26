@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Core</title>
+
+    <style>
+       
+       @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+       body{
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #0A0A0A;
+          display: flex; /*flexionar a vizualização*/
+          justify-content: center; /*faz parte do display flex*/
+          align-items: center; /*faz parte do display flex*/
+          height: 100vh; /*faz parte do display flex*/
+        }
+
+       .login{
+           background-color: #2b2a2a;
+           width: 450px;
+           padding: 30px;
+           border-radius: 15px; /*curvatura da ponta*/
+           box-shadow: 0 0 30px #E50914; /*sombra*/
+           text-align: center;
+        }
+
+        h1{
+            color: #E50914;
+            font-family: "Jersey 25", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 55px;
+        }
+
+        p{
+            color: white;
+            font-size: 30px;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none; /*borda*/
+            border-radius: 8px; /*formato da caixa / arredondado*/
+            box-sizing: border-box;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #E50914;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        button:hover{
+            background: #ce0c16;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fb0e1a;
+        }
+
+        .criar{
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login">
+
+        <h1>Action Core 💥</h1>
+
+        <p>Entre na sua conta</p>
+        
+        <form action="home.html"> <!--Redirecionar para outra pagina com os botões-->
+             
+            <input type="email" placeholder="Digite seu email"> <!--quadradinho do email-->
+
+            <input type="password" placeholder="Digite sua senha"> <!--quadradinho da senha-->
+
+            <button type="submit">Entrar</button> <!--Botão-->
+
+        </form>
+
+        <p class="criar">
+            <a href="#">Criar Conta</a>
+        </p>
+
+    </div>
+    
+</body>
+
+</html>
